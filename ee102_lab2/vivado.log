@@ -1,0 +1,856 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Fri Feb 21 15:39:52 2025
+# Process ID         : 28348
+# Current directory  : D:/LAB2_buggy_v2
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent16800 D:\LAB2_buggy_v2\LAB2_buggy.xpr
+# Log file           : D:/LAB2_buggy_v2/vivado.log
+# Journal file       : D:/LAB2_buggy_v2\vivado.jou
+# Running On         : LAPTOP-T4A93B1T
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 19045
+# Processor Detail   : Intel(R) Core(TM) i7-10750H CPU @ 2.60GHz
+# CPU Frequency      : 2592 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 12
+# Host memory        : 16945 MB
+# Swap memory        : 3355 MB
+# Total Virtual      : 20300 MB
+# Available Virtual  : 9316 MB
+#-----------------------------------------------------------
+start_gui
+open_project D:/LAB2_buggy_v2/LAB2_buggy.xpr
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'D:/LAB2_buggy_v2/LAB2_buggy.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/ProgramFiles/Vivado/2024.2/data/ip'.
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'testBench1'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/LAB2_buggy_v2/LAB2_buggy.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'D:/ProgramFiles/Vivado/2024.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'testBench1' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/LAB2_buggy_v2/LAB2_buggy.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj testBench1_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/LAB2_buggy_v2/LAB2_buggy.srcs/sources_1/new/testBench1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'testBench1'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/LAB2_buggy_v2/LAB2_buggy.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testBench1_behav xil_defaultlib.testBench1 -log elaborate.log"
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: D:/ProgramFiles/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testBench1_behav xil_defaultlib.testBench1 -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture structural_sub1 of entity xil_defaultlib.sub_module1 [sub_module1_default]
+Compiling architecture structural_sub2 of entity xil_defaultlib.sub_module2 [sub_module2_default]
+Compiling architecture structural_top of entity xil_defaultlib.top_module [top_module_default]
+Compiling architecture behavior of entity xil_defaultlib.testbench1
+Built simulation snapshot testBench1_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/LAB2_buggy_v2/LAB2_buggy.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testBench1_behav -key {Behavioral:sim_1:Functional:testBench1} -tclbatch {testBench1.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source testBench1.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testBench1_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1277.246 ; gain = 17.395
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Fri Feb 21 15:40:52 2025] Launched impl_1...
+Run output will be captured here: D:/LAB2_buggy_v2/LAB2_buggy.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2024.2
+  **** Build date : Oct 29 2024 at 10:25:41
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2024.2.0
+  ****** Build date   : Oct 30 2024-21:19:07
+    **** Build number : 2024.2.1730312347
+      ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
+      ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 1284.262 ; gain = 7.016
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183ACA8A2A
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Fri Feb 21 15:48:13 2025] Launched impl_1...
+Run output will be captured here: D:/LAB2_buggy_v2/LAB2_buggy.runs/impl_1/runme.log
+synth_design -top testBench1 -part xc7a35tcpg236-1 -lint 
+Command: synth_design -top testBench1 -part xc7a35tcpg236-1 -lint
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 14816
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 1817.988 ; gain = 467.262
+---------------------------------------------------------------------------------
+Clean up Linter database...
+INFO: [Synth 8-638] synthesizing module 'testBench1' [D:/LAB2_buggy_v2/LAB2_buggy.srcs/sources_1/new/testBench1.vhd:10]
+INFO: [Synth 8-3491] module 'top_module' declared at 'D:/LAB2_buggy_v2/LAB2_buggy.srcs/sources_1/new/top_module.vhd:5' bound to instance 'uut' of component 'top_module' [D:/LAB2_buggy_v2/LAB2_buggy.srcs/sources_1/new/testBench1.vhd:25]
+INFO: [Synth 8-638] synthesizing module 'top_module' [D:/LAB2_buggy_v2/LAB2_buggy.srcs/sources_1/new/top_module.vhd:12]
+INFO: [Synth 8-3491] module 'sub_module1' declared at 'D:/LAB2_buggy_v2/LAB2_buggy.srcs/sources_1/new/sub_module1.vhd:4' bound to instance 'sub_module1_2' of component 'sub_module1' [D:/LAB2_buggy_v2/LAB2_buggy.srcs/sources_1/new/top_module.vhd:33]
+INFO: [Synth 8-638] synthesizing module 'sub_module1' [D:/LAB2_buggy_v2/LAB2_buggy.srcs/sources_1/new/sub_module1.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'sub_module1' (1#1) [D:/LAB2_buggy_v2/LAB2_buggy.srcs/sources_1/new/sub_module1.vhd:11]
+INFO: [Synth 8-3491] module 'sub_module2' declared at 'D:/LAB2_buggy_v2/LAB2_buggy.srcs/sources_1/new/sub_module2.vhd:4' bound to instance 'sub_module2_1' of component 'sub_module2' [D:/LAB2_buggy_v2/LAB2_buggy.srcs/sources_1/new/top_module.vhd:39]
+INFO: [Synth 8-638] synthesizing module 'sub_module2' [D:/LAB2_buggy_v2/LAB2_buggy.srcs/sources_1/new/sub_module2.vhd:10]
+INFO: [Synth 8-3491] module 'sub_module1' declared at 'D:/LAB2_buggy_v2/LAB2_buggy.srcs/sources_1/new/sub_module1.vhd:4' bound to instance 'sub_module1_1' of component 'sub_module1' [D:/LAB2_buggy_v2/LAB2_buggy.srcs/sources_1/new/sub_module2.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'sub_module2' (2#1) [D:/LAB2_buggy_v2/LAB2_buggy.srcs/sources_1/new/sub_module2.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'top_module' (3#1) [D:/LAB2_buggy_v2/LAB2_buggy.srcs/sources_1/new/top_module.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'testBench1' (4#1) [D:/LAB2_buggy_v2/LAB2_buggy.srcs/sources_1/new/testBench1.vhd:10]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 1922.246 ; gain = 571.520
+---------------------------------------------------------------------------------
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Fri Feb 21 15:49:09 2025
+| Host         : LAPTOP-T4A93B1T running 64-bit major release  (build 9200)
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+RTL Linter Report
+
+Table of Contents
+-----------------
+1. Summary
+
+1. Summary
+----------
+
++-----------+----------+--------------+----------+
+| Rule ID   | Severity | # Violations | # Waived |
++-----------+----------+--------------+----------+
+| ASSIGN-6  | WARNING  | 1            | 0        |
+| ASSIGN-10 | WARNING  | 1            | 0        |
++-----------+----------+--------------+----------+
+
+
+WARNING: [Synth 37-125] [ASSIGN-10]Some bits in IO 'i_input_byte' are not read. First unread bit index is 6. 
+RTL Name 'i_input_byte', Hierarchy 'sub_module1', File 'sub_module1.vhd', Line 6.
+WARNING: [Synth 37-93] [ASSIGN-6]Signal 'o_LED' was assigned but not read. 
+RTL Name 'o_LED', Hierarchy 'testBench1', File 'D:/LAB2_buggy_v2/LAB2_buggy.srcs/sources_1/new/testBench1.vhd', Line 21.
+INFO: [Synth 37-85] Total of 2 linter message(s) generated.
+INFO: [Synth 37-45] Linter Run Finished!
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 1922.246 ; gain = 571.520
+INFO: [Common 17-83] Releasing license: Synthesis
+19 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 1922.246 ; gain = 571.520
+synth_design -top testBench1 -part xc7a35tcpg236-1 -lint 
+Command: synth_design -top testBench1 -part xc7a35tcpg236-1 -lint
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 1922.246 ; gain = 0.000
+---------------------------------------------------------------------------------
+Clean up Linter database...
+INFO: [Synth 8-638] synthesizing module 'testBench1' [D:/LAB2_buggy_v2/LAB2_buggy.srcs/sources_1/new/testBench1.vhd:10]
+INFO: [Synth 8-3491] module 'top_module' declared at 'D:/LAB2_buggy_v2/LAB2_buggy.srcs/sources_1/new/top_module.vhd:5' bound to instance 'uut' of component 'top_module' [D:/LAB2_buggy_v2/LAB2_buggy.srcs/sources_1/new/testBench1.vhd:25]
+INFO: [Synth 8-638] synthesizing module 'top_module' [D:/LAB2_buggy_v2/LAB2_buggy.srcs/sources_1/new/top_module.vhd:12]
+INFO: [Synth 8-3491] module 'sub_module1' declared at 'D:/LAB2_buggy_v2/LAB2_buggy.srcs/sources_1/new/sub_module1.vhd:4' bound to instance 'sub_module1_2' of component 'sub_module1' [D:/LAB2_buggy_v2/LAB2_buggy.srcs/sources_1/new/top_module.vhd:33]
+INFO: [Synth 8-638] synthesizing module 'sub_module1' [D:/LAB2_buggy_v2/LAB2_buggy.srcs/sources_1/new/sub_module1.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'sub_module1' (1#1) [D:/LAB2_buggy_v2/LAB2_buggy.srcs/sources_1/new/sub_module1.vhd:11]
+INFO: [Synth 8-3491] module 'sub_module2' declared at 'D:/LAB2_buggy_v2/LAB2_buggy.srcs/sources_1/new/sub_module2.vhd:4' bound to instance 'sub_module2_1' of component 'sub_module2' [D:/LAB2_buggy_v2/LAB2_buggy.srcs/sources_1/new/top_module.vhd:39]
+INFO: [Synth 8-638] synthesizing module 'sub_module2' [D:/LAB2_buggy_v2/LAB2_buggy.srcs/sources_1/new/sub_module2.vhd:10]
+INFO: [Synth 8-3491] module 'sub_module1' declared at 'D:/LAB2_buggy_v2/LAB2_buggy.srcs/sources_1/new/sub_module1.vhd:4' bound to instance 'sub_module1_1' of component 'sub_module1' [D:/LAB2_buggy_v2/LAB2_buggy.srcs/sources_1/new/sub_module2.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'sub_module2' (2#1) [D:/LAB2_buggy_v2/LAB2_buggy.srcs/sources_1/new/sub_module2.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'top_module' (3#1) [D:/LAB2_buggy_v2/LAB2_buggy.srcs/sources_1/new/top_module.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'testBench1' (4#1) [D:/LAB2_buggy_v2/LAB2_buggy.srcs/sources_1/new/testBench1.vhd:10]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1930.074 ; gain = 7.828
+---------------------------------------------------------------------------------
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Fri Feb 21 15:49:56 2025
+| Host         : LAPTOP-T4A93B1T running 64-bit major release  (build 9200)
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+RTL Linter Report
+
+Table of Contents
+-----------------
+1. Summary
+
+1. Summary
+----------
+
++-----------+----------+--------------+----------+
+| Rule ID   | Severity | # Violations | # Waived |
++-----------+----------+--------------+----------+
+| ASSIGN-6  | WARNING  | 1            | 0        |
+| ASSIGN-10 | WARNING  | 1            | 0        |
++-----------+----------+--------------+----------+
+
+
+WARNING: [Synth 37-125] [ASSIGN-10]Some bits in IO 'i_input_byte' are not read. First unread bit index is 6. 
+RTL Name 'i_input_byte', Hierarchy 'sub_module1', File 'sub_module1.vhd', Line 6.
+WARNING: [Synth 37-93] [ASSIGN-6]Signal 'o_LED' was assigned but not read. 
+RTL Name 'o_LED', Hierarchy 'testBench1', File 'D:/LAB2_buggy_v2/LAB2_buggy.srcs/sources_1/new/testBench1.vhd', Line 21.
+INFO: [Synth 37-85] Total of 2 linter message(s) generated.
+INFO: [Synth 37-45] Linter Run Finished!
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1952.969 ; gain = 30.723
+INFO: [Common 17-83] Releasing license: Synthesis
+17 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1952.969 ; gain = 30.723
+synth_design -top testBench1 -part xc7a35tcpg236-1 -lint 
+Command: synth_design -top testBench1 -part xc7a35tcpg236-1 -lint
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1953.645 ; gain = 0.676
+---------------------------------------------------------------------------------
+Clean up Linter database...
+INFO: [Synth 8-638] synthesizing module 'testBench1' [D:/LAB2_buggy_v2/LAB2_buggy.srcs/sources_1/new/testBench1.vhd:10]
+INFO: [Synth 8-3491] module 'top_module' declared at 'D:/LAB2_buggy_v2/LAB2_buggy.srcs/sources_1/new/top_module.vhd:5' bound to instance 'uut' of component 'top_module' [D:/LAB2_buggy_v2/LAB2_buggy.srcs/sources_1/new/testBench1.vhd:25]
+INFO: [Synth 8-638] synthesizing module 'top_module' [D:/LAB2_buggy_v2/LAB2_buggy.srcs/sources_1/new/top_module.vhd:12]
+INFO: [Synth 8-3491] module 'sub_module1' declared at 'D:/LAB2_buggy_v2/LAB2_buggy.srcs/sources_1/new/sub_module1.vhd:4' bound to instance 'sub_module1_2' of component 'sub_module1' [D:/LAB2_buggy_v2/LAB2_buggy.srcs/sources_1/new/top_module.vhd:33]
+INFO: [Synth 8-638] synthesizing module 'sub_module1' [D:/LAB2_buggy_v2/LAB2_buggy.srcs/sources_1/new/sub_module1.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'sub_module1' (1#1) [D:/LAB2_buggy_v2/LAB2_buggy.srcs/sources_1/new/sub_module1.vhd:11]
+INFO: [Synth 8-3491] module 'sub_module2' declared at 'D:/LAB2_buggy_v2/LAB2_buggy.srcs/sources_1/new/sub_module2.vhd:4' bound to instance 'sub_module2_1' of component 'sub_module2' [D:/LAB2_buggy_v2/LAB2_buggy.srcs/sources_1/new/top_module.vhd:39]
+INFO: [Synth 8-638] synthesizing module 'sub_module2' [D:/LAB2_buggy_v2/LAB2_buggy.srcs/sources_1/new/sub_module2.vhd:10]
+INFO: [Synth 8-3491] module 'sub_module1' declared at 'D:/LAB2_buggy_v2/LAB2_buggy.srcs/sources_1/new/sub_module1.vhd:4' bound to instance 'sub_module1_1' of component 'sub_module1' [D:/LAB2_buggy_v2/LAB2_buggy.srcs/sources_1/new/sub_module2.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'sub_module2' (2#1) [D:/LAB2_buggy_v2/LAB2_buggy.srcs/sources_1/new/sub_module2.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'top_module' (3#1) [D:/LAB2_buggy_v2/LAB2_buggy.srcs/sources_1/new/top_module.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'testBench1' (4#1) [D:/LAB2_buggy_v2/LAB2_buggy.srcs/sources_1/new/testBench1.vhd:10]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1953.645 ; gain = 0.676
+---------------------------------------------------------------------------------
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Fri Feb 21 15:50:27 2025
+| Host         : LAPTOP-T4A93B1T running 64-bit major release  (build 9200)
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+RTL Linter Report
+
+Table of Contents
+-----------------
+1. Summary
+
+1. Summary
+----------
+
++-----------+----------+--------------+----------+
+| Rule ID   | Severity | # Violations | # Waived |
++-----------+----------+--------------+----------+
+| ASSIGN-6  | WARNING  | 1            | 0        |
+| ASSIGN-10 | WARNING  | 1            | 0        |
++-----------+----------+--------------+----------+
+
+
+WARNING: [Synth 37-125] [ASSIGN-10]Some bits in IO 'i_input_byte' are not read. First unread bit index is 6. 
+RTL Name 'i_input_byte', Hierarchy 'sub_module1', File 'sub_module1.vhd', Line 6.
+WARNING: [Synth 37-93] [ASSIGN-6]Signal 'o_LED' was assigned but not read. 
+RTL Name 'o_LED', Hierarchy 'testBench1', File 'D:/LAB2_buggy_v2/LAB2_buggy.srcs/sources_1/new/testBench1.vhd', Line 21.
+INFO: [Synth 37-85] Total of 2 linter message(s) generated.
+INFO: [Synth 37-45] Linter Run Finished!
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1961.020 ; gain = 8.051
+INFO: [Common 17-83] Releasing license: Synthesis
+17 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1961.020 ; gain = 8.051
+set_property top top_module [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+synth_design -top testBench1 -part xc7a35tcpg236-1 -lint 
+Command: synth_design -top testBench1 -part xc7a35tcpg236-1 -lint
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 1962.633 ; gain = 1.613
+---------------------------------------------------------------------------------
+Clean up Linter database...
+INFO: [Synth 8-638] synthesizing module 'testBench1' [D:/LAB2_buggy_v2/LAB2_buggy.srcs/sources_1/new/testBench1.vhd:10]
+INFO: [Synth 8-3491] module 'top_module' declared at 'D:/LAB2_buggy_v2/LAB2_buggy.srcs/sources_1/new/top_module.vhd:5' bound to instance 'uut' of component 'top_module' [D:/LAB2_buggy_v2/LAB2_buggy.srcs/sources_1/new/testBench1.vhd:25]
+INFO: [Synth 8-638] synthesizing module 'top_module' [D:/LAB2_buggy_v2/LAB2_buggy.srcs/sources_1/new/top_module.vhd:12]
+INFO: [Synth 8-3491] module 'sub_module1' declared at 'D:/LAB2_buggy_v2/LAB2_buggy.srcs/sources_1/new/sub_module1.vhd:4' bound to instance 'sub_module1_2' of component 'sub_module1' [D:/LAB2_buggy_v2/LAB2_buggy.srcs/sources_1/new/top_module.vhd:33]
+INFO: [Synth 8-638] synthesizing module 'sub_module1' [D:/LAB2_buggy_v2/LAB2_buggy.srcs/sources_1/new/sub_module1.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'sub_module1' (1#1) [D:/LAB2_buggy_v2/LAB2_buggy.srcs/sources_1/new/sub_module1.vhd:11]
+INFO: [Synth 8-3491] module 'sub_module2' declared at 'D:/LAB2_buggy_v2/LAB2_buggy.srcs/sources_1/new/sub_module2.vhd:4' bound to instance 'sub_module2_1' of component 'sub_module2' [D:/LAB2_buggy_v2/LAB2_buggy.srcs/sources_1/new/top_module.vhd:39]
+INFO: [Synth 8-638] synthesizing module 'sub_module2' [D:/LAB2_buggy_v2/LAB2_buggy.srcs/sources_1/new/sub_module2.vhd:10]
+INFO: [Synth 8-3491] module 'sub_module1' declared at 'D:/LAB2_buggy_v2/LAB2_buggy.srcs/sources_1/new/sub_module1.vhd:4' bound to instance 'sub_module1_1' of component 'sub_module1' [D:/LAB2_buggy_v2/LAB2_buggy.srcs/sources_1/new/sub_module2.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'sub_module2' (2#1) [D:/LAB2_buggy_v2/LAB2_buggy.srcs/sources_1/new/sub_module2.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'top_module' (3#1) [D:/LAB2_buggy_v2/LAB2_buggy.srcs/sources_1/new/top_module.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'testBench1' (4#1) [D:/LAB2_buggy_v2/LAB2_buggy.srcs/sources_1/new/testBench1.vhd:10]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1962.633 ; gain = 1.613
+---------------------------------------------------------------------------------
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Fri Feb 21 15:50:59 2025
+| Host         : LAPTOP-T4A93B1T running 64-bit major release  (build 9200)
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+RTL Linter Report
+
+Table of Contents
+-----------------
+1. Summary
+
+1. Summary
+----------
+
++-----------+----------+--------------+----------+
+| Rule ID   | Severity | # Violations | # Waived |
++-----------+----------+--------------+----------+
+| ASSIGN-6  | WARNING  | 1            | 0        |
+| ASSIGN-10 | WARNING  | 1            | 0        |
++-----------+----------+--------------+----------+
+
+
+WARNING: [Synth 37-125] [ASSIGN-10]Some bits in IO 'i_input_byte' are not read. First unread bit index is 6. 
+RTL Name 'i_input_byte', Hierarchy 'sub_module1', File 'sub_module1.vhd', Line 6.
+WARNING: [Synth 37-93] [ASSIGN-6]Signal 'o_LED' was assigned but not read. 
+RTL Name 'o_LED', Hierarchy 'testBench1', File 'D:/LAB2_buggy_v2/LAB2_buggy.srcs/sources_1/new/testBench1.vhd', Line 21.
+INFO: [Synth 37-85] Total of 2 linter message(s) generated.
+INFO: [Synth 37-45] Linter Run Finished!
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1967.512 ; gain = 6.492
+INFO: [Common 17-83] Releasing license: Synthesis
+17 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1967.512 ; gain = 6.492
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -jobs 6
+[Fri Feb 21 15:51:23 2025] Launched impl_1...
+Run output will be captured here: D:/LAB2_buggy_v2/LAB2_buggy.runs/impl_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a35tcpg236-1
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1996.195 ; gain = 0.000
+INFO: [Project 1-479] Netlist was created with Vivado 2024.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [D:/LAB2_buggy_v2/LAB2_buggy.srcs/constrs_1/new/constraints_basys3.xdc]
+WARNING: [Vivado 12-584] No ports matched 'i_SW[0]'. [D:/LAB2_buggy_v2/LAB2_buggy.srcs/constrs_1/new/constraints_basys3.xdc:5]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/LAB2_buggy_v2/LAB2_buggy.srcs/constrs_1/new/constraints_basys3.xdc:5]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'i_SW[0]'. [D:/LAB2_buggy_v2/LAB2_buggy.srcs/constrs_1/new/constraints_basys3.xdc:6]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/LAB2_buggy_v2/LAB2_buggy.srcs/constrs_1/new/constraints_basys3.xdc:6]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'i_SW[1]'. [D:/LAB2_buggy_v2/LAB2_buggy.srcs/constrs_1/new/constraints_basys3.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/LAB2_buggy_v2/LAB2_buggy.srcs/constrs_1/new/constraints_basys3.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'i_SW[1]'. [D:/LAB2_buggy_v2/LAB2_buggy.srcs/constrs_1/new/constraints_basys3.xdc:8]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/LAB2_buggy_v2/LAB2_buggy.srcs/constrs_1/new/constraints_basys3.xdc:8]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'i_SW[2]'. [D:/LAB2_buggy_v2/LAB2_buggy.srcs/constrs_1/new/constraints_basys3.xdc:9]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/LAB2_buggy_v2/LAB2_buggy.srcs/constrs_1/new/constraints_basys3.xdc:9]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'i_SW[2]'. [D:/LAB2_buggy_v2/LAB2_buggy.srcs/constrs_1/new/constraints_basys3.xdc:10]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/LAB2_buggy_v2/LAB2_buggy.srcs/constrs_1/new/constraints_basys3.xdc:10]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'i_SW[3]'. [D:/LAB2_buggy_v2/LAB2_buggy.srcs/constrs_1/new/constraints_basys3.xdc:11]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/LAB2_buggy_v2/LAB2_buggy.srcs/constrs_1/new/constraints_basys3.xdc:11]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'i_SW[3]'. [D:/LAB2_buggy_v2/LAB2_buggy.srcs/constrs_1/new/constraints_basys3.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/LAB2_buggy_v2/LAB2_buggy.srcs/constrs_1/new/constraints_basys3.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'i_SW[4]'. [D:/LAB2_buggy_v2/LAB2_buggy.srcs/constrs_1/new/constraints_basys3.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/LAB2_buggy_v2/LAB2_buggy.srcs/constrs_1/new/constraints_basys3.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'i_SW[4]'. [D:/LAB2_buggy_v2/LAB2_buggy.srcs/constrs_1/new/constraints_basys3.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/LAB2_buggy_v2/LAB2_buggy.srcs/constrs_1/new/constraints_basys3.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'i_SW[5]'. [D:/LAB2_buggy_v2/LAB2_buggy.srcs/constrs_1/new/constraints_basys3.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/LAB2_buggy_v2/LAB2_buggy.srcs/constrs_1/new/constraints_basys3.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'i_SW[5]'. [D:/LAB2_buggy_v2/LAB2_buggy.srcs/constrs_1/new/constraints_basys3.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/LAB2_buggy_v2/LAB2_buggy.srcs/constrs_1/new/constraints_basys3.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'i_SW[6]'. [D:/LAB2_buggy_v2/LAB2_buggy.srcs/constrs_1/new/constraints_basys3.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/LAB2_buggy_v2/LAB2_buggy.srcs/constrs_1/new/constraints_basys3.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'i_SW[6]'. [D:/LAB2_buggy_v2/LAB2_buggy.srcs/constrs_1/new/constraints_basys3.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/LAB2_buggy_v2/LAB2_buggy.srcs/constrs_1/new/constraints_basys3.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'i_SW[7]'. [D:/LAB2_buggy_v2/LAB2_buggy.srcs/constrs_1/new/constraints_basys3.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/LAB2_buggy_v2/LAB2_buggy.srcs/constrs_1/new/constraints_basys3.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'i_SW[7]'. [D:/LAB2_buggy_v2/LAB2_buggy.srcs/constrs_1/new/constraints_basys3.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/LAB2_buggy_v2/LAB2_buggy.srcs/constrs_1/new/constraints_basys3.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'o_LED[0]'. [D:/LAB2_buggy_v2/LAB2_buggy.srcs/constrs_1/new/constraints_basys3.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/LAB2_buggy_v2/LAB2_buggy.srcs/constrs_1/new/constraints_basys3.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'o_LED[0]'. [D:/LAB2_buggy_v2/LAB2_buggy.srcs/constrs_1/new/constraints_basys3.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/LAB2_buggy_v2/LAB2_buggy.srcs/constrs_1/new/constraints_basys3.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'o_LED[1]'. [D:/LAB2_buggy_v2/LAB2_buggy.srcs/constrs_1/new/constraints_basys3.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/LAB2_buggy_v2/LAB2_buggy.srcs/constrs_1/new/constraints_basys3.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'o_LED[1]'. [D:/LAB2_buggy_v2/LAB2_buggy.srcs/constrs_1/new/constraints_basys3.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/LAB2_buggy_v2/LAB2_buggy.srcs/constrs_1/new/constraints_basys3.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'o_LED[2]'. [D:/LAB2_buggy_v2/LAB2_buggy.srcs/constrs_1/new/constraints_basys3.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/LAB2_buggy_v2/LAB2_buggy.srcs/constrs_1/new/constraints_basys3.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'o_LED[2]'. [D:/LAB2_buggy_v2/LAB2_buggy.srcs/constrs_1/new/constraints_basys3.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/LAB2_buggy_v2/LAB2_buggy.srcs/constrs_1/new/constraints_basys3.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'o_LED[3]'. [D:/LAB2_buggy_v2/LAB2_buggy.srcs/constrs_1/new/constraints_basys3.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/LAB2_buggy_v2/LAB2_buggy.srcs/constrs_1/new/constraints_basys3.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'o_LED[3]'. [D:/LAB2_buggy_v2/LAB2_buggy.srcs/constrs_1/new/constraints_basys3.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/LAB2_buggy_v2/LAB2_buggy.srcs/constrs_1/new/constraints_basys3.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'o_LED[4]'. [D:/LAB2_buggy_v2/LAB2_buggy.srcs/constrs_1/new/constraints_basys3.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/LAB2_buggy_v2/LAB2_buggy.srcs/constrs_1/new/constraints_basys3.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'o_LED[4]'. [D:/LAB2_buggy_v2/LAB2_buggy.srcs/constrs_1/new/constraints_basys3.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/LAB2_buggy_v2/LAB2_buggy.srcs/constrs_1/new/constraints_basys3.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'o_LED[5]'. [D:/LAB2_buggy_v2/LAB2_buggy.srcs/constrs_1/new/constraints_basys3.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/LAB2_buggy_v2/LAB2_buggy.srcs/constrs_1/new/constraints_basys3.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'o_LED[5]'. [D:/LAB2_buggy_v2/LAB2_buggy.srcs/constrs_1/new/constraints_basys3.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/LAB2_buggy_v2/LAB2_buggy.srcs/constrs_1/new/constraints_basys3.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'o_LED[6]'. [D:/LAB2_buggy_v2/LAB2_buggy.srcs/constrs_1/new/constraints_basys3.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/LAB2_buggy_v2/LAB2_buggy.srcs/constrs_1/new/constraints_basys3.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'o_LED[6]'. [D:/LAB2_buggy_v2/LAB2_buggy.srcs/constrs_1/new/constraints_basys3.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/LAB2_buggy_v2/LAB2_buggy.srcs/constrs_1/new/constraints_basys3.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'o_LED[7]'. [D:/LAB2_buggy_v2/LAB2_buggy.srcs/constrs_1/new/constraints_basys3.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/LAB2_buggy_v2/LAB2_buggy.srcs/constrs_1/new/constraints_basys3.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'o_LED[7]'. [D:/LAB2_buggy_v2/LAB2_buggy.srcs/constrs_1/new/constraints_basys3.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/LAB2_buggy_v2/LAB2_buggy.srcs/constrs_1/new/constraints_basys3.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [D:/LAB2_buggy_v2/LAB2_buggy.srcs/constrs_1/new/constraints_basys3.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2007.938 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:14 ; elapsed = 00:00:08 . Memory (MB): peak = 2350.496 ; gain = 382.984
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'top_module'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+boost::filesystem::remove: Dosya başka bir işlem tarafından kullanıldığından bu işlem dosyaya erişemiyor: "D:/LAB2_buggy_v2/LAB2_buggy.sim/sim_1/behav/xsim/simulate.log"
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'top_module'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+boost::filesystem::remove: Dosya başka bir işlem tarafından kullanıldığından bu işlem dosyaya erişemiyor: "D:/LAB2_buggy_v2/LAB2_buggy.sim/sim_1/behav/xsim/simulate.log"
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'top_module'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+boost::filesystem::remove: Dosya başka bir işlem tarafından kullanıldığından bu işlem dosyaya erişemiyor: "D:/LAB2_buggy_v2/LAB2_buggy.sim/sim_1/behav/xsim/simulate.log"
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'top_module'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/LAB2_buggy_v2/LAB2_buggy.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'D:/ProgramFiles/Vivado/2024.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_module' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/LAB2_buggy_v2/LAB2_buggy.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj top_module_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'top_module'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/LAB2_buggy_v2/LAB2_buggy.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/LAB2_buggy_v2/LAB2_buggy.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot top_module_behav xil_defaultlib.top_module -log elaborate.log"
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: D:/ProgramFiles/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot top_module_behav xil_defaultlib.top_module -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Time resolution is 1 ps
+ERROR: [Labtools 27-1832] create_wave_config not a supported tcl command in labtools hardware mode. Default wave configurations are automatically created when triggering an ILA core.
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 2803.891 ; gain = 0.000
+set_property top testBench1 [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\LAB2_buggy_v2\LAB2_buggy.srcs\sources_1\new\sub_module2.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\LAB2_buggy_v2\LAB2_buggy.srcs\sources_1\new\sub_module1.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\LAB2_buggy_v2\LAB2_buggy.srcs\sources_1\new\top_module.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\LAB2_buggy_v2\LAB2_buggy.srcs\sources_1\new\sub_module2.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\LAB2_buggy_v2\LAB2_buggy.srcs\sources_1\new\sub_module2.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\LAB2_buggy_v2\LAB2_buggy.srcs\sources_1\new\sub_module2.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\LAB2_buggy_v2\LAB2_buggy.srcs\sources_1\new\sub_module1.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\LAB2_buggy_v2\LAB2_buggy.srcs\sources_1\new\top_module.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\LAB2_buggy_v2\LAB2_buggy.srcs\sources_1\new\sub_module1.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\LAB2_buggy_v2\LAB2_buggy.srcs\sources_1\new\sub_module1.vhd:]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'testBench1'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/LAB2_buggy_v2/LAB2_buggy.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'D:/ProgramFiles/Vivado/2024.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'testBench1' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/LAB2_buggy_v2/LAB2_buggy.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj testBench1_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/LAB2_buggy_v2/LAB2_buggy.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testBench1_behav xil_defaultlib.testBench1 -log elaborate.log"
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: D:/ProgramFiles/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testBench1_behav xil_defaultlib.testBench1 -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/LAB2_buggy_v2/LAB2_buggy.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testBench1_behav -key {Behavioral:sim_1:Functional:testBench1} -tclbatch {testBench1.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source testBench1.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testBench1_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 2803.891 ; gain = 0.000
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Fri Feb 21 15:56:49 2025] Launched impl_1...
+Run output will be captured here: D:/LAB2_buggy_v2/LAB2_buggy.runs/impl_1/runme.log
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file D:/LAB2_buggy_v2/LAB2_buggy.srcs/utils_1/imports/synth_1/sub_module2_the_beast.dcp with file D:/LAB2_buggy_v2/LAB2_buggy.runs/synth_1/testBench1.dcp
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/LAB2_buggy_v2/LAB2_buggy.runs/synth_1
+
+launch_runs synth_1 -jobs 6
+[Fri Feb 21 15:57:44 2025] Launched synth_1...
+Run output will be captured here: D:/LAB2_buggy_v2/LAB2_buggy.runs/synth_1/runme.log
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\LAB2_buggy_v2\LAB2_buggy.srcs\sources_1\new\sub_module2.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\LAB2_buggy_v2\LAB2_buggy.srcs\sources_1\new\sub_module1.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\LAB2_buggy_v2\LAB2_buggy.srcs\sources_1\new\top_module.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\LAB2_buggy_v2\LAB2_buggy.srcs\sources_1\new\sub_module2.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\LAB2_buggy_v2\LAB2_buggy.srcs\sources_1\new\sub_module2.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\LAB2_buggy_v2\LAB2_buggy.srcs\sources_1\new\sub_module2.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\LAB2_buggy_v2\LAB2_buggy.srcs\sources_1\new\sub_module1.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\LAB2_buggy_v2\LAB2_buggy.srcs\sources_1\new\top_module.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\LAB2_buggy_v2\LAB2_buggy.srcs\sources_1\new\sub_module1.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\LAB2_buggy_v2\LAB2_buggy.srcs\sources_1\new\sub_module1.vhd:]
+launch_runs impl_1 -jobs 6
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Fri Feb 21 15:58:35 2025] Launched impl_1...
+Run output will be captured here: D:/LAB2_buggy_v2/LAB2_buggy.runs/impl_1/runme.log
+get_files *.bit
+WARNING: [Vivado 12-818] No files matched '*.bit'
+report_utilization
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Fri Feb 21 16:07:53 2025
+| Host         : LAPTOP-T4A93B1T running 64-bit major release  (build 9200)
+| Command      : report_utilization
+| Design       : testBench1
+| Device       : xc7a35tcpg236-1
+| Speed File   : -1
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Slice Logic
+1.1 Summary of Registers by Type
+2. Memory
+3. DSP
+4. IO and GT Specific
+5. Clocking
+6. Specific Feature
+7. Primitives
+8. Black Boxes
+9. Instantiated Netlists
+
+1. Slice Logic
+--------------
+
++-------------------------+------+-------+------------+-----------+-------+
+|        Site Type        | Used | Fixed | Prohibited | Available | Util% |
++-------------------------+------+-------+------------+-----------+-------+
+| Slice LUTs*             |    0 |     0 |          0 |     20800 |  0.00 |
+|   LUT as Logic          |    0 |     0 |          0 |     20800 |  0.00 |
+|   LUT as Memory         |    0 |     0 |          0 |      9600 |  0.00 |
+| Slice Registers         |    0 |     0 |          0 |     41600 |  0.00 |
+|   Register as Flip Flop |    0 |     0 |          0 |     41600 |  0.00 |
+|   Register as Latch     |    0 |     0 |          0 |     41600 |  0.00 |
+| F7 Muxes                |    0 |     0 |          0 |     16300 |  0.00 |
+| F8 Muxes                |    0 |     0 |          0 |      8150 |  0.00 |
++-------------------------+------+-------+------------+-----------+-------+
+* Warning! The Final LUT count, after physical optimizations and full implementation, is typically lower. Run opt_design after synthesis, if not already completed, for a more realistic count.
+Warning! LUT value is adjusted to account for LUT combining.
+Warning! For any ECO changes, please run place_design if there are unplaced instances
+
+
+1.1 Summary of Registers by Type
+--------------------------------
+
++-------+--------------+-------------+--------------+
+| Total | Clock Enable | Synchronous | Asynchronous |
++-------+--------------+-------------+--------------+
+| 0     |            _ |           - |            - |
+| 0     |            _ |           - |          Set |
+| 0     |            _ |           - |        Reset |
+| 0     |            _ |         Set |            - |
+| 0     |            _ |       Reset |            - |
+| 0     |          Yes |           - |            - |
+| 0     |          Yes |           - |          Set |
+| 0     |          Yes |           - |        Reset |
+| 0     |          Yes |         Set |            - |
+| 0     |          Yes |       Reset |            - |
++-------+--------------+-------------+--------------+
+
+
+2. Memory
+---------
+
++----------------+------+-------+------------+-----------+-------+
+|    Site Type   | Used | Fixed | Prohibited | Available | Util% |
++----------------+------+-------+------------+-----------+-------+
+| Block RAM Tile |    0 |     0 |          0 |        50 |  0.00 |
+|   RAMB36/FIFO* |    0 |     0 |          0 |        50 |  0.00 |
+|   RAMB18       |    0 |     0 |          0 |       100 |  0.00 |
++----------------+------+-------+------------+-----------+-------+
+* Note: Each Block RAM Tile only has one FIFO logic available and therefore can accommodate only one FIFO36E1 or one FIFO18E1. However, if a FIFO18E1 occupies a Block RAM Tile, that tile can still accommodate a RAMB18E1
+
+
+3. DSP
+------
+
++-----------+------+-------+------------+-----------+-------+
+| Site Type | Used | Fixed | Prohibited | Available | Util% |
++-----------+------+-------+------------+-----------+-------+
+| DSPs      |    0 |     0 |          0 |        90 |  0.00 |
++-----------+------+-------+------------+-----------+-------+
+
+
+4. IO and GT Specific
+---------------------
+
++-----------------------------+------+-------+------------+-----------+-------+
+|          Site Type          | Used | Fixed | Prohibited | Available | Util% |
++-----------------------------+------+-------+------------+-----------+-------+
+| Bonded IOB                  |    0 |     0 |          0 |       106 |  0.00 |
+| Bonded IPADs                |    0 |     0 |          0 |        10 |  0.00 |
+| Bonded OPADs                |    0 |     0 |          0 |         4 |  0.00 |
+| PHY_CONTROL                 |    0 |     0 |          0 |         5 |  0.00 |
+| PHASER_REF                  |    0 |     0 |          0 |         5 |  0.00 |
+| OUT_FIFO                    |    0 |     0 |          0 |        20 |  0.00 |
+| IN_FIFO                     |    0 |     0 |          0 |        20 |  0.00 |
+| IDELAYCTRL                  |    0 |     0 |          0 |         5 |  0.00 |
+| IBUFDS                      |    0 |     0 |          0 |       104 |  0.00 |
+| GTPE2_CHANNEL               |    0 |     0 |          0 |         2 |  0.00 |
+| PHASER_OUT/PHASER_OUT_PHY   |    0 |     0 |          0 |        20 |  0.00 |
+| PHASER_IN/PHASER_IN_PHY     |    0 |     0 |          0 |        20 |  0.00 |
+| IDELAYE2/IDELAYE2_FINEDELAY |    0 |     0 |          0 |       250 |  0.00 |
+| IBUFDS_GTE2                 |    0 |     0 |          0 |         2 |  0.00 |
+| ILOGIC                      |    0 |     0 |          0 |       106 |  0.00 |
+| OLOGIC                      |    0 |     0 |          0 |       106 |  0.00 |
++-----------------------------+------+-------+------------+-----------+-------+
+
+
+5. Clocking
+-----------
+
++------------+------+-------+------------+-----------+-------+
+|  Site Type | Used | Fixed | Prohibited | Available | Util% |
++------------+------+-------+------------+-----------+-------+
+| BUFGCTRL   |    0 |     0 |          0 |        32 |  0.00 |
+| BUFIO      |    0 |     0 |          0 |        20 |  0.00 |
+| MMCME2_ADV |    0 |     0 |          0 |         5 |  0.00 |
+| PLLE2_ADV  |    0 |     0 |          0 |         5 |  0.00 |
+| BUFMRCE    |    0 |     0 |          0 |        10 |  0.00 |
+| BUFHCE     |    0 |     0 |          0 |        72 |  0.00 |
+| BUFR       |    0 |     0 |          0 |        20 |  0.00 |
++------------+------+-------+------------+-----------+-------+
+
+
+6. Specific Feature
+-------------------
+
++-------------+------+-------+------------+-----------+-------+
+|  Site Type  | Used | Fixed | Prohibited | Available | Util% |
++-------------+------+-------+------------+-----------+-------+
+| BSCANE2     |    0 |     0 |          0 |         4 |  0.00 |
+| CAPTUREE2   |    0 |     0 |          0 |         1 |  0.00 |
+| DNA_PORT    |    0 |     0 |          0 |         1 |  0.00 |
+| EFUSE_USR   |    0 |     0 |          0 |         1 |  0.00 |
+| FRAME_ECCE2 |    0 |     0 |          0 |         1 |  0.00 |
+| ICAPE2      |    0 |     0 |          0 |         2 |  0.00 |
+| PCIE_2_1    |    0 |     0 |          0 |         1 |  0.00 |
+| STARTUPE2   |    0 |     0 |          0 |         1 |  0.00 |
+| XADC        |    0 |     0 |          0 |         1 |  0.00 |
++-------------+------+-------+------------+-----------+-------+
+
+
+7. Primitives
+-------------
+
++----------+------+---------------------+
+| Ref Name | Used | Functional Category |
++----------+------+---------------------+
+
+
+8. Black Boxes
+--------------
+
++----------+------+
+| Ref Name | Used |
++----------+------+
+
+
+9. Instantiated Netlists
+------------------------
+
++----------+------+
+| Ref Name | Used |
++----------+------+
+
+
+set_property top top_module [current_fileset]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\LAB2_buggy_v2\LAB2_buggy.srcs\sources_1\new\sub_module2.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\LAB2_buggy_v2\LAB2_buggy.srcs\sources_1\new\sub_module1.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\LAB2_buggy_v2\LAB2_buggy.srcs\sources_1\new\top_module.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\LAB2_buggy_v2\LAB2_buggy.srcs\sources_1\new\sub_module2.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\LAB2_buggy_v2\LAB2_buggy.srcs\sources_1\new\sub_module2.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\LAB2_buggy_v2\LAB2_buggy.srcs\sources_1\new\sub_module2.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\LAB2_buggy_v2\LAB2_buggy.srcs\sources_1\new\sub_module1.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\LAB2_buggy_v2\LAB2_buggy.srcs\sources_1\new\top_module.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\LAB2_buggy_v2\LAB2_buggy.srcs\sources_1\new\sub_module1.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\LAB2_buggy_v2\LAB2_buggy.srcs\sources_1\new\sub_module1.vhd:]
+update_compile_order -fileset sources_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\LAB2_buggy_v2\LAB2_buggy.srcs\sources_1\new\sub_module2.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\LAB2_buggy_v2\LAB2_buggy.srcs\sources_1\new\sub_module1.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\LAB2_buggy_v2\LAB2_buggy.srcs\sources_1\new\top_module.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\LAB2_buggy_v2\LAB2_buggy.srcs\sources_1\new\sub_module2.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\LAB2_buggy_v2\LAB2_buggy.srcs\sources_1\new\sub_module2.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\LAB2_buggy_v2\LAB2_buggy.srcs\sources_1\new\sub_module2.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\LAB2_buggy_v2\LAB2_buggy.srcs\sources_1\new\sub_module1.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\LAB2_buggy_v2\LAB2_buggy.srcs\sources_1\new\top_module.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\LAB2_buggy_v2\LAB2_buggy.srcs\sources_1\new\sub_module1.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\LAB2_buggy_v2\LAB2_buggy.srcs\sources_1\new\sub_module1.vhd:]
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file D:/LAB2_buggy_v2/LAB2_buggy.srcs/utils_1/imports/synth_1/sub_module2_the_beast.dcp with file D:/LAB2_buggy_v2/LAB2_buggy.runs/synth_1/testBench1.dcp
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/LAB2_buggy_v2/LAB2_buggy.runs/synth_1
+
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\LAB2_buggy_v2\LAB2_buggy.srcs\sources_1\new\sub_module2.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\LAB2_buggy_v2\LAB2_buggy.srcs\sources_1\new\sub_module1.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\LAB2_buggy_v2\LAB2_buggy.srcs\sources_1\new\top_module.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\LAB2_buggy_v2\LAB2_buggy.srcs\sources_1\new\sub_module2.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\LAB2_buggy_v2\LAB2_buggy.srcs\sources_1\new\sub_module2.vhd:]
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Fri Feb 21 16:09:01 2025] Launched synth_1...
+Run output will be captured here: D:/LAB2_buggy_v2/LAB2_buggy.runs/synth_1/runme.log
+[Fri Feb 21 16:09:01 2025] Launched impl_1...
+Run output will be captured here: D:/LAB2_buggy_v2/LAB2_buggy.runs/impl_1/runme.log
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\LAB2_buggy_v2\LAB2_buggy.srcs\sources_1\new\sub_module2.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\LAB2_buggy_v2\LAB2_buggy.srcs\sources_1\new\sub_module1.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\LAB2_buggy_v2\LAB2_buggy.srcs\sources_1\new\top_module.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\LAB2_buggy_v2\LAB2_buggy.srcs\sources_1\new\top_module.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\LAB2_buggy_v2\LAB2_buggy.srcs\sources_1\new\top_module.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/LAB2_buggy_v2/LAB2_buggy.runs/impl_1/top_module.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183ACA8A2A
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Feb 21 17:20:42 2025...

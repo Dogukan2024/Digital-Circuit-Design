@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Fri Mar  7 15:45:43 2025
+# Process ID         : 9100
+# Current directory  : D:/ee102_lab4/final_lab4/lab4.runs/synth_1
+# Command line       : vivado.exe -log ALU_FPGA.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ALU_FPGA.tcl
+# Log file           : D:/ee102_lab4/final_lab4/lab4.runs/synth_1/ALU_FPGA.vds
+# Journal file       : D:/ee102_lab4/final_lab4/lab4.runs/synth_1\vivado.jou
+# Running On         : LAPTOP-T4A93B1T
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 19045
+# Processor Detail   : Intel(R) Core(TM) i7-10750H CPU @ 2.60GHz
+# CPU Frequency      : 2592 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 12
+# Host memory        : 16945 MB
+# Swap memory        : 6598 MB
+# Total Virtual      : 23543 MB
+# Available Virtual  : 4675 MB
+#-----------------------------------------------------------
+source ALU_FPGA.tcl -notrace

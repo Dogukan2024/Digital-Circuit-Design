@@ -1,0 +1,11 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  "../../../Boran lab4.srcs/sources_1/new/Full_Adder.vhd"
+vhdl xil_defaultlib  "../../../Boran lab4.srcs/sources_1/new/Ripple_Carry_Adder.vhd"
+vhdl xil_defaultlib  "../../../Boran lab4.srcs/sources_1/new/Shift_Operations.vhd"
+vhdl xil_defaultlib  "../../../Boran lab4.srcs/sources_1/new/Logic_Opeartions.vhd"
+vhdl xil_defaultlib  "../../../Boran lab4.srcs/sources_1/new/Substractor.vhd"
+vhdl xil_defaultlib  "../../../Boran lab4.srcs/sources_1/new/ALU.vhd"
+vhdl xil_defaultlib  "../../../Boran lab4.srcs/sim_1/new/ALU_TB.vhd"
+
+# Do not sort compile order
+nosort

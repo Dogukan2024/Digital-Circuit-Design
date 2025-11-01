@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1741301878">
+  <File Type="REPORTS-TCL" Name="testbench_alu_reports.tcl"/>
+  <File Type="ROUTE-PWR-SUM" Name="testbench_alu_power_summary_routed.pb"/>
+  <File Type="BITSTR-MMI" Name="testbench_alu.mmi"/>
+  <File Type="OPT-DRC" Name="testbench_alu_drc_opted.rpt"/>
+  <File Type="BG-DRC" Name="testbench_alu.drc"/>
+  <File Type="ROUTE-STATUS-PB" Name="testbench_alu_route_status.pb"/>
+  <File Type="BG-BGN" Name="testbench_alu.bgn"/>
+  <File Type="PLACE-UTIL" Name="testbench_alu_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="testbench_alu_utilization_placed.pb"/>
+  <File Type="PLACE-IO" Name="testbench_alu_io_placed.rpt"/>
+  <File Type="BG-BIN" Name="testbench_alu.bin"/>
+  <File Type="PLACE-CTRL" Name="testbench_alu_control_sets_placed.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="testbench_alu_power_routed.rpx"/>
+  <File Type="ROUTE-DCP" Name="testbench_alu_routed.dcp"/>
+  <File Type="BITSTR-MSK" Name="testbench_alu.msk"/>
+  <File Type="BITSTR-RBT" Name="testbench_alu.rbt"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="testbench_alu_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-RPX" Name="testbench_alu_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="testbench_alu_route_status.rpt"/>
+  <File Type="PA-TCL" Name="testbench_alu.tcl"/>
+  <File Type="ROUTE-PWR" Name="testbench_alu_power_routed.rpt"/>
+  <File Type="ROUTE-DRC" Name="testbench_alu_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-RPX" Name="testbench_alu_drc_routed.rpx"/>
+  <File Type="ROUTE-DRC-PB" Name="testbench_alu_drc_routed.pb"/>
+  <File Type="BITSTR-SYSDEF" Name="testbench_alu.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="testbench_alu_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="testbench_alu_methodology_drc_routed.rpx"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="testbench_alu.ltx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="testbench_alu_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-SIMILARITY" Name="testbench_alu_incremental_reuse_routed.rpt"/>
+  <File Type="RDI-RDI" Name="testbench_alu.vdi"/>
+  <File Type="ROUTE-CLK" Name="testbench_alu_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="testbench_alu_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="testbench_alu_bus_skew_routed.rpx"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="testbench_alu_bus_skew_routed.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="testbench_alu_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="testbench_alu_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="testbench_alu_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="testbench_alu_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="testbench_alu_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BG-BIT" Name="testbench_alu.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="testbench_alu_bus_skew_postroute_physopted.pb"/>
+  <File Type="BITSTR-NKY" Name="testbench_alu.nky"/>
+  <File Type="BITSTR-BMM" Name="testbench_alu_bd.bmm"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="OPT-HWDEF" Name="testbench_alu.hwdef"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="testbench_alu_incremental_reuse_pre_placed.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="testbench_alu_routed_error.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="testbench_alu_routed_bb.dcp"/>
+  <File Type="ROUTE-TIMING-PB" Name="testbench_alu_timing_summary_routed.pb"/>
+  <File Type="OPT-DCP" Name="testbench_alu_opt.dcp"/>
+  <File Type="PLACE-DCP" Name="testbench_alu_placed.dcp"/>
+  <File Type="PWROPT-DCP" Name="testbench_alu_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="testbench_alu_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="testbench_alu_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="testbench_alu_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="testbench_alu_postroute_physopt_bb.dcp"/>
+  <File Type="PDI-FILE" Name="testbench_alu.pdi"/>
+  <File Type="BOOT-PDI-FILE" Name="testbench_alu_boot.pdi"/>
+  <File Type="PL-PDI-FILE" Name="testbench_alu_pld.pdi"/>
+  <File Type="RCFI_FILE" Name="testbench_alu.rcfi"/>
+  <File Type="CFI_FILE" Name="testbench_alu.cfi"/>
+  <File Type="RNPI_FILE" Name="testbench_alu.rnpi"/>
+  <File Type="NPI_FILE" Name="testbench_alu.npi"/>
+  <File Type="RBD_FILE" Name="testbench_alu.rbd"/>
+  <File Type="ROUTE-RQS" Name="testbench_alu_routed.rqs"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="testbench_alu_postroute_physopted.rqs"/>
+  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/adder_subtractor.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/alu.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/arithmetic_unit.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/logic_unit.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/shift_operator.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/testbench_alu.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="testbench_alu"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/constraints.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/testbench_alu.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+    <Step Id="write_device_image"/>
+  </Strategy>
+</GenRun>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1741351539">
+  <File Type="PA-TCL" Name="ALU_FPGA.tcl"/>
+  <File Type="REPORTS-TCL" Name="ALU_FPGA_reports.tcl"/>
+  <File Type="BITSTR-MSK" Name="ALU_FPGA.msk"/>
+  <File Type="RDI-RDI" Name="ALU_FPGA.vdi"/>
+  <File Type="BG-BIT" Name="ALU_FPGA.bit"/>
+  <File Type="BG-DRC" Name="ALU_FPGA.drc"/>
+  <File Type="BG-BGN" Name="ALU_FPGA.bgn"/>
+  <File Type="BG-BIN" Name="ALU_FPGA.bin"/>
+  <File Type="BITSTR-RBT" Name="ALU_FPGA.rbt"/>
+  <File Type="BITSTR-NKY" Name="ALU_FPGA.nky"/>
+  <File Type="BITSTR-BMM" Name="ALU_FPGA_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="ALU_FPGA.mmi"/>
+  <File Type="BITSTR-SYSDEF" Name="ALU_FPGA.sysdef"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="ALU_FPGA.ltx"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="OPT-HWDEF" Name="ALU_FPGA.hwdef"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="ALU_FPGA_incremental_reuse_pre_placed.rpt"/>
+  <File Type="ROUTE-DCP" Name="ALU_FPGA_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="ALU_FPGA_routed_error.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="ALU_FPGA_routed_bb.dcp"/>
+  <File Type="ROUTE-TIMING-PB" Name="ALU_FPGA_timing_summary_routed.pb"/>
+  <File Type="OPT-DCP" Name="ALU_FPGA_opt.dcp"/>
+  <File Type="PLACE-DCP" Name="ALU_FPGA_placed.dcp"/>
+  <File Type="PWROPT-DCP" Name="ALU_FPGA_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="ALU_FPGA_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="ALU_FPGA_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="ALU_FPGA_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="ALU_FPGA_postroute_physopt_bb.dcp"/>
+  <File Type="PDI-FILE" Name="ALU_FPGA.pdi"/>
+  <File Type="BOOT-PDI-FILE" Name="ALU_FPGA_boot.pdi"/>
+  <File Type="PL-PDI-FILE" Name="ALU_FPGA_pld.pdi"/>
+  <File Type="RCFI_FILE" Name="ALU_FPGA.rcfi"/>
+  <File Type="CFI_FILE" Name="ALU_FPGA.cfi"/>
+  <File Type="RNPI_FILE" Name="ALU_FPGA.rnpi"/>
+  <File Type="NPI_FILE" Name="ALU_FPGA.npi"/>
+  <File Type="RBD_FILE" Name="ALU_FPGA.rbd"/>
+  <File Type="ROUTE-RQS" Name="ALU_FPGA_routed.rqs"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="ALU_FPGA_postroute_physopted.rqs"/>
+  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/ALU.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../project_1/project_1.srcs/sources_1/new/ALU.vhd"/>
+        <Attr Name="ImportTime" Val="1741028844"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Full_Adder.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../project_1/project_1.srcs/sources_1/new/Full_Adder.vhd"/>
+        <Attr Name="ImportTime" Val="1741024260"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Logic_Opeartions.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../project_1/project_1.srcs/sources_1/new/Logic_Opeartions.vhd"/>
+        <Attr Name="ImportTime" Val="1741027273"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Ripple_Carry_Adder.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../project_1/project_1.srcs/sources_1/new/Ripple_Carry_Adder.vhd"/>
+        <Attr Name="ImportTime" Val="1741025044"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Shift_Operations.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../project_1/project_1.srcs/sources_1/new/Shift_Operations.vhd"/>
+        <Attr Name="ImportTime" Val="1741028129"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Substractor.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../project_1/project_1.srcs/sources_1/new/Substractor.vhd"/>
+        <Attr Name="ImportTime" Val="1741025835"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/ALU_FPGA.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../project_1/project_1.srcs/sources_1/new/ALU_FPGA.vhd"/>
+        <Attr Name="ImportTime" Val="1741030802"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="ALU_FPGA"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/Basys3_Master.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../project_1/project_1.srcs/constrs_1/new/Basys3_Master.xdc"/>
+        <Attr Name="ImportTime" Val="1741031635"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/ALU_FPGA.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+    <Step Id="write_device_image"/>
+  </Strategy>
+</GenRun>

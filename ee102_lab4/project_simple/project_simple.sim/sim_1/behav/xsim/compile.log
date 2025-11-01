@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/ee102_lab4/project_simple/project_simple.srcs/sources_1/new/adder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'adder'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/ee102_lab4/project_simple/project_simple.srcs/sources_1/new/top_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'testbench'
