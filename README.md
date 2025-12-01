@@ -21,8 +21,9 @@ The project uses several VHDL modules:
 
 All parts were simulated to verify correct behavior and then programmed onto the Basys 3 board. The final output shows the three agents moving into a triangle based on their measured distances, along with a visual mode change when the payload button is activated.
 
-
 =======
+# Arithmetic Logic Unit (ALU) Project
+
 This project involves designing and implementing an **Arithmetic Logic Unit (ALU)** using **VHDL** as part of a digital circuit design lab. An ALU is a combinational circuit capable of performing basic arithmetic and logical operations.
 
 The ALU in this project supports **eight functions**, including:
@@ -34,6 +35,7 @@ The ALU in this project supports **eight functions**, including:
 The design was built modularly in VHDL, simulated to verify correct functionality, and synthesized using Vivado. The final implementation was deployed on an FPGA, where the ALU outputs were displayed through onboard LEDs.
 
 This repository contains the VHDL source files, simulation results, and related project materials.
+
 =======
 # Seven-Segment Display 
 
