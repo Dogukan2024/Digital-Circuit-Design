@@ -1,8 +1,8 @@
-
-My Youtube Video Demonstrating the Ultrasonic Relative Position Calculator
-[![Video](https://img.youtube.com/vi/AQCqc1EKAgc/0.jpg)](https://youtu.be/AQCqc1EKAgc)
-
 # Ultrasonic Relative Position Calculator (aka “Ultrasonic Pairwise Distance Measurer”)
+
+[![Video](https://img.youtube.com/vi/AQCqc1EKAgc/0.jpg)](https://youtu.be/AQCqc1EKAgc)
+My Youtube Video Demonstrating the Ultrasonic Relative Position Calculator
+
 This project creates a system of **three small “agents”** that measure how far they are from one another and form a triangle on a 2D display. Each agent uses basic distance-sensing hardware, and the Basys 3 FPGA processes the measurements and shows the result on a VGA monitor.
 
 The idea is inspired by tiny robots that could one day locate objects or areas inside biological tissue. In this project, the concept is simplified into a game-like system where the agents measure their distances and share their positions.
@@ -21,7 +21,6 @@ The project uses several VHDL modules:
 
 All parts were simulated to verify correct behavior and then programmed onto the Basys 3 board. The final output shows the three agents moving into a triangle based on their measured distances, along with a visual mode change when the payload button is activated.
 
-=======
 # Arithmetic Logic Unit (ALU) Project
 
 This project involves designing and implementing an **Arithmetic Logic Unit (ALU)** using **VHDL** as part of a digital circuit design lab. An ALU is a combinational circuit capable of performing basic arithmetic and logical operations.
@@ -36,7 +35,6 @@ The design was built modularly in VHDL, simulated to verify correct functionalit
 
 This repository contains the VHDL source files, simulation results, and related project materials.
 
-=======
 # Seven-Segment Display 
 
 This project implements a multi-digit **seven-segment display controller** on the Basys 3 FPGA.  
