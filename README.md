@@ -1,5 +1,5 @@
 # Ultrasonic Relative Location Calculator (aka “Ultrasonic Pairwise Distance Measurer”)
-My Youtube Video Demonstrating the Ultrasonic Relative Position Calculator
+My Youtube Video Demonstrating the Ultrasonic Relative Location Calculator
 [![Video](https://img.youtube.com/vi/AQCqc1EKAgc/0.jpg)](https://youtu.be/AQCqc1EKAgc)
 
 
