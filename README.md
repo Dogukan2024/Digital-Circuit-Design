@@ -49,7 +49,5 @@ The design includes:
 - A **multiplexer** to select the correct digit value  
 - A VHDL implementation of the full display controller  
 
-Simulation was run to verify the display behavior, and the final design was programmed onto the FPGA.  
-Photos of the working seven-segment display are included in the project materials.
 
 
